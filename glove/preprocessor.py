@@ -27,7 +27,7 @@ class Preprocessor(object):
         assert os.path.isdir(config.filedir), ""
 
         # Assert the targets are correct
-        filename = ("glove.6B.%s.txt" % (str(config.embedding) + "d"))
+        filename = ("glove.42B.%s.txt" % (str(config.embedding) + "d"))
         self.targetpath = os.path.join(config.filedir, filename)
         assert os.path.isfile(self.targetpath), ""
         
